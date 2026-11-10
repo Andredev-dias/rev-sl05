@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site institucional</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site institucional</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <nav>
-        <a class="nav-item" href="../Home">
-            <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
-            <p>Home</p>
-        </a>
-          <a class="nav-item" href="../Institution">
-            <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
-            <p>Instituição</p>
-        </a>
-          <a class="nav-item" href="../Products">
-            <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
-            <p>Produtos</p>
-        </a>
-          <a class="nav-item" href="../Contact">
-            <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
-            <p>Contato</p>
-        </a>
-     </nav>
+  <nav>
+    <a class="nav-item" href="../Home">
+      <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
+      <p>Home</p>
+    </a>
+    <a class="nav-item" href="../Institution">
+      <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
+      <p>Instituição</p>
+    </a>
+    <a class="nav-item" href="../Products">
+      <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
+      <p>Produtos</p>
+    </a>
+    <a class="nav-item" href="../Contact">
+      <img class="nav-icon" src="../assets/icons/botao-home.png" alt="">
+      <p>Contato</p>
+    </a>
+  </nav>
 
-     <div id="wrap-open" class="wrap-open" onclick="openMenu()">
-        <img src="../assets/icons/menu-aberto.png" alt="menu">
-     </div>
+  <div id="wrap-open" class="wrap-open" onclick="openMenu()">
+    <img src="../assets/icons/menu-aberto.png" alt="menu">
+  </div>
 
-     <div id="menu-mobile">
-        <img onclick="fechar()" src="../assets/icons/marca-cruzada.png" alt="X">
-        <a href="../Home">Home</a>
-        <a href="../Institution">Instituição</a>
-        <a href="../Products">Produtos</a>
-        <a href="../Contact">Contato</a>
-     </div>
+  <div id="menu-mobile">
+    <img onclick="fechar()" src="../assets/icons/marca-cruzada.png" alt="X">
+    <a href="../Home">Home</a>
+    <a href="../Institution">Instituição</a>
+    <a href="../Products">Produtos</a>
+    <a href="../Contact">Contato</a>
+  </div>
 
-    <section class="s1">
+  <section class="s1">
+    <div class="wrap-divs">
+      <div class="title-div">
+        <h1>Título qualquer da página</h1>
+      </div>
+      <div class="wrap-btns">
+        <button onclick="">Contact</button>
+        <button onclick="">Pra baixo</button>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <section class="s2">
+    <div class="card">
+      <div class="wrap-img">
+        <img src="../assets/images/card01.avif" alt="Imagem 1">
+      </div>
+      <div class="wrap-text">
+        <h3>Card 01</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Itaque, eius? Possimus nobis earum ipsum.</p>
+      </div>
+    </div>
 
-    <section class="s2">
-      
-    </section>
+    <div class="card">
+      <div class="wrap-img">
+        <img src="../assets/images/card02.jpeg" alt="Imagem 1">
+      </div>
+      <div class="wrap-text">
+        <h3>Card 01</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Itaque, eius? Possimus nobis earum ipsum.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="wrap-img">
+        <img src="../assets/images/card03.jpg" alt="Imagem 1">
+      </div>
+      <div class="wrap-text">
+        <h3>Card 01</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Itaque, eius? Possimus nobis earum ipsum.</p>
+      </div>
+    </div>
+
+  </section>
 
   <script src="script.js"></script>
 </body>
+
 </html>
