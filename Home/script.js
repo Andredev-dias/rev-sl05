@@ -11,3 +11,16 @@ function fechar(){
     var sanduiche = document.getElementById('wrap-open')
     sanduiche.style.display = 'flex'
 }
+
+function irParaBaixo(){
+   window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+   }) 
+}
+
+function irParaContato(){
+    window.location.href = "../Contact"
+}
+
+//  const irParaContato = () => window.location.href = "../Contact"
