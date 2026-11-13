@@ -1,26 +1,29 @@
-function openMenu(){
-    var abrirMenu = document.getElementById('menu-mobile')
-    abrirMenu.style.display = 'flex'
-    var sanduiche = document.getElementById('wrap-open')
-    sanduiche.style.display = 'none'
+function abrir(){
+    document.getElementById('wrap-open').style.display = "none"
+    document.getElementById('menu-mobile').style.display = "flex"
 }
 
 function fechar(){
-    var abrirMenu = document.getElementById('menu-mobile')
-    abrirMenu.style.display = 'none'
-    var sanduiche = document.getElementById('wrap-open')
-    sanduiche.style.display = 'flex'
-}
-
-function irParaBaixo(){
-   window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth"
-   }) 
+    document.getElementById('wrap-open').style.display = "flex"
+    document.getElementById('menu-mobile').style.display = "none"
 }
 
 function irParaContato(){
     window.location.href = "../Contact"
 }
+   
+// const irParaContato = () =>  window.location.href = "../Contact"
 
-//  const irParaContato = () => window.location.href = "../Contact"
+function praBaixo(){
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    })
+}
+
+// function praBaixo(){
+//     window.scrollBy({
+//         top: window.innerHeight,
+//         behavior: "smooth"
+//     })
+// }

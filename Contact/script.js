@@ -1,24 +1,23 @@
-function openMenu(){
-    var abrirMenu = document.getElementById('menu-mobile')
-    abrirMenu.style.display = 'flex'
-    var sanduiche = document.getElementById('wrap-open')
-    sanduiche.style.display = 'none'
+function abrir(){
+    document.getElementById('wrap-open').style.display = "none"
+    document.getElementById('menu-mobile').style.display = "flex"
 }
 
 function fechar(){
-    var abrirMenu = document.getElementById('menu-mobile')
-    abrirMenu.style.display = 'none'
-    var sanduiche = document.getElementById('wrap-open')
-    sanduiche.style.display = 'flex'
+    document.getElementById('wrap-open').style.display = "flex"
+    document.getElementById('menu-mobile').style.display = "none"
 }
 
-function  enviar(){
-    const nome = document.getElementById('nome').value 
-    const assunto = document.getElementById('assunto').value 
+function enviar(){
+    //pegas os valores digitados pelo usuario
+    const nome = document.getElementById('nome').value
+    const assunto = document.getElementById('assunto').value
     // console.log(nome, assunto)
-    const msg = `Gostaria de entrar em contato!\n\nNome:${nome}\nAssunto: ${assunto}`
+    //montando a string com a variaveis e utilizando crase para isso
+    const msg = `Gostaria de entrar em contato!\n\nNome: ${nome}\nAssunto: ${assunto}`
     // console.log(msg)
-    const msgTranformada = encodeURIComponent(msg)
-    // console.log(msgTranformada)
-    window.open(`https://wa.me/5541999999999?text=${msgTranformada}`)
+    const msgTransformada = encodeURIComponent(msg)
+    //abre o whats web para mandar a mensagem
+    window.open(`https:wa.me/5541999999999?text=${msgTransformada}`)
 }
+
